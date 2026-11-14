@@ -91,7 +91,7 @@ function renderRanking() {
         observations: []
       };
     }
-    const score = Number(ev.totalScore) || ["c1", "c2", "c3", "c4", "c5", "c6", "c7"]
+    const score = Number(ev.totalScore) || ["c1", "c2", "c3", "c4", "c5", "c6", "c7", "c8"]
       .reduce((sum, criterion) => sum + (Number(ev[criterion]) || 0), 0);
     summary[startupName].totalScoreSum += score;
     summary[startupName].evaluationsCount += 1;
