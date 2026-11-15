@@ -133,7 +133,7 @@ form.addEventListener("submit", async (e) => {
   };
 
   const scores = Object.fromEntries(
-    ["c1", "c2", "c3", "c4", "c5", "c6", "c7",].map((name) => [name, getScore(name)])
+    ["c1", "c2", "c3", "c4", "c5", "c6", "c7", "c8"].map((name) => [name, getScore(name)])
   );
   if (Object.values(scores).some((score) => score === null)) return;
 
